@@ -2,20 +2,78 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+/* Reset margin and padding for all elements */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+/* Remove text decorations from links */
+a {
+    text-decoration: none;
 }
 
+/* Remove list styles */
+ul,
+ol {
+    list-style: none;
+}
+
+/* Set a consistent font for the entire document */
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Arial', sans-serif;
+    line-height: 1.5;
+}
+
+/* Ensure images scale correctly and don’t break the layout */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Normalize table borders */
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+/* Avoid any unwanted spacing in form elements */
+input,
+textarea,
+select {
+    border: none;
+    outline: none;
+    font-family: inherit;
+    font-size: inherit;
+}
+
+/* Normalize buttons */
+button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: inherit;
+}
+
+@keyframes appear {
+    0% {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+
+    40% {
+        opacity: 1;
+        transform: scale(1.1);
+    }
+
+    60%,
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
 }
