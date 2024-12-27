@@ -1,6 +1,8 @@
+"use client";
 import Header from "@/component/header";
 import About from "@/app/about/page";
 import Certificate from "@/app/certificate/page";
+import Contact from "@/app/contact/page";
 
 
 
@@ -18,6 +20,9 @@ export default function Home() {
             <div>
                 <Certificate/>
             </div>
+            {/*<div>*/}
+            {/*    <Contact/>*/}
+            {/*</div>*/}
         </>
     );
 }
