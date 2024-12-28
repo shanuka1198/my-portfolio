@@ -20,9 +20,9 @@ export default function Home() {
             <div>
                 <Certificate/>
             </div>
-            {/*<div>*/}
-            {/*    <Contact/>*/}
-            {/*</div>*/}
+            <div>
+                <Contact/>
+            </div>
         </>
     );
 }

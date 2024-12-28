@@ -1,86 +1,94 @@
+"use client";
+import {motion} from "framer-motion";
 
 function Contact(){
     return(
         <>
-            <div className="flex flex-col sm:flex-row items-center sm:items-start">
-                {/* Contact Information */}
-                <div
-                    className="relative left-5 w-full sm:w-1/2 h-[500px] sm:h-[340px] rounded-lg shadow-lg  bg-yellow-600 my-8 sm:my-48 order-2 sm:order-none"
+            <div className="flex justify-center flex-col sm:flex-row items-center sm:items-start">
+                <motion.p
+                    initial={{opacity: 0, y: 50}}
+                    whileInView={{opacity: 1, y: 0}}
+                    viewport={{once: false, amount: 0.2}} 
+                    transition={{duration: 1, ease: "easeInOut"}}
+                    className="sm:text-6xl sm:my-60 mx-24 my-12 text-center text-3xl font-bold text-yellow-600"
                 >
-                    <div className="absolute w-full px-6 sm:px-12 py-10">
-                        <p className="font-extrabold text-2xl sm:text-3xl text-center sm:text-left text-black">
+                    CONTACT <span className="text-black">ME</span>
+                </motion.p>
+                <motion.div
+                    initial={{opacity: 0, x: -50}}
+                    whileInView={{opacity: 1, x: 0}}
+                    viewport={{once: false}}
+                    transition={{duration: 1, ease: "easeInOut"}}
+                    className="relative shadow-2xl w-full  sm:w-[300px] h-[360px]  sm:h-[443px]  rounded-lg bg-yellow-600 my-8 sm:my-48 order-2 sm:order-none  py-6  sm:py-10"
+                >
+                    <div className="absolute p-7 left-0 sm:left-3 w-full">
+                        <p className="font-extrabold text-xl sm:text-3xl text-center sm:text-left text-black">
                             Let's Connect!
                         </p>
-                        <p className="text-md sm:text-lg text-center sm:text-left text-white mt-4">
-                            Feel free to get in touch with me for any inquiries, collaborations, or just to say hi!
+                        <p className="text-sm sm:text-sm text-center sm:text-left text-white mt-4">
+                            "I’d love to hear from you! Whether it’s a project idea, a collaboration opportunity,
+                            or just a friendly hello,feel free to drop me a message. Let’s create something amazing together!"
                         </p>
                         <div className="mt-6">
                             <p className="font-semibold text-black text-opacity-90 text-sm sm:text-md">
-                                <span className="text-white">Email:</span> shanuka@example.com
+                                <span className="text-white">Email:</span> shanukaimantha0@gmail.com
                             </p>
                             <p className="font-semibold text-black text-opacity-90 text-sm sm:text-md mt-2">
-                                <span className="text-white">Phone:</span> +94 77 123 4567
+                                <span className="text-white">Phone:</span> 077 388 0132
                             </p>
                         </div>
-                        <div className="mt-8 flex justify-center sm:justify-start">
+                        <div className="mt-6 flex justify-center sm:justify-start">
                             <button
-                                className="bg-black text-yellow-500 font-bold text-sm px-4 py-2 rounded-full hover:scale-110 transition-transform">
+                                className="bg-black text-yellow-500 font-bold text-sm px-4 py-2 rounded-full hover:scale-105 transition-transform">
                                 Explore More
                             </button>
                         </div>
                     </div>
-                </div>
+                </motion.div>
 
-                {/* Contact Form */}
-                <div
-                    className="flex justify-center sm:justify-end mx-12 mt-[400px] sm:mt-[160px] sm:ml-10 order-1 sm:order-none">
-                    <div
-                        className="bg-white border-2 border-black shadow-lg rounded-lg w-[300px] sm:w-[400px] p-6 transform hover:scale-105 transition-transform"
-                    >
+                <motion.div
+                    initial={{opacity: 0, x: 50}}
+                    whileInView={{opacity: 1, x: 0}}
+                    viewport={{once: false}}
+                    transition={{duration: 1, ease: "easeInOut"}}
+                    className="flex shadow-2xl rounded-xl justify-center sm:justify-end mt-8 sm:mt-[195px] sm:ml-10 order-1 sm:order-none"
+                >
+                    <div className="bg-white border shadow-lg rounded-lg w-[380px]  sm:w-[300px]  p-4 ">
                         <h2 className="font-extrabold text-black text-center text-lg sm:text-xl mb-4">
                             Send a Message
                         </h2>
                         <form>
                             <div className="mb-4">
-                                <label
-                                    className="block text-black text-sm font-semibold mb-2"
-                                    htmlFor="name"
-                                >
+                                <label className="block text-black text-sm font-semibold mb-2" htmlFor="name">
                                     Your Name
                                 </label>
                                 <input
                                     id="name"
                                     type="text"
                                     placeholder="Enter your name"
-                                    className="w-full px-3 py-2 border-2 border-black rounded-md focus:outline-none focus:ring-2 focus:ring-yellow-500"
+                                    className="w-full px-3 py-2 border-2 border-black rounded-md focus:outline-none focus:ring-2 focus:ring-yellow-600"
                                 />
                             </div>
                             <div className="mb-4">
-                                <label
-                                    className="block text-black text-sm font-semibold mb-2"
-                                    htmlFor="email"
-                                >
+                                <label className="block text-black text-sm font-semibold mb-2" htmlFor="email">
                                     Your Email
                                 </label>
                                 <input
                                     id="email"
                                     type="email"
                                     placeholder="Enter your email"
-                                    className="w-full px-3 py-2 border-2 border-black rounded-md focus:outline-none focus:ring-2 focus:ring-yellow-500"
+                                    className="w-full px-3 py-2 border-2 border-black rounded-md focus:outline-none focus:ring-2 focus:ring-yellow-600"
                                 />
                             </div>
                             <div className="mb-4">
-                                <label
-                                    className="block text-black text-sm font-semibold mb-2"
-                                    htmlFor="message"
-                                >
+                                <label className="block text-black text-sm font-semibold mb-2" htmlFor="message">
                                     Your Message
                                 </label>
                                 <textarea
                                     id="message"
                                     placeholder="Write your message"
                                     rows="4"
-                                    className="w-full px-3 py-2 border-2 border-black rounded-md focus:outline-none focus:ring-2 focus:ring-yellow-500"
+                                    className="w-full px-3 py-2 border-2 border-black rounded-md focus:outline-none focus:ring-2 focus:ring-yellow-600"
                                 ></textarea>
                             </div>
                             <div className="flex justify-center">
@@ -93,10 +101,8 @@ function Contact(){
                             </div>
                         </form>
                     </div>
-                </div>
+                </motion.div>
             </div>
-
-
         </>
     )
 }

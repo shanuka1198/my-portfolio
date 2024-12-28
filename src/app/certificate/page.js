@@ -1,4 +1,4 @@
-"use client"; // Add this if using animations in a Next.js `app` directory.
+"use client";
 
 import { motion } from "framer-motion";
 
@@ -24,7 +24,7 @@ function Certificate() {
                     whileInView={{opacity: 1, x: 0}}
                     viewport={{once: false}}
                     transition={{duration: 0.8, ease: "easeInOut"}}
-                    className="w-full sm:w-full hover:scale-105 transition-all duration-300 ease-linear rounded-3xl shadow-2xl sm:m-5 m-2 bg-opacity-50 h-[700px] bg-yellow-600"
+                    className="w-full sm:w-full hover:scale-105 transition-all duration-300 ease-linear rounded-3xl shadow-2xl sm:m-5 m-2 bg-opacity-70 h-[700px] bg-yellow-600"
                 >
                     <div className="flex flex-row">
                         <div className="p-10 w-[400px] h-[600px]">
@@ -55,7 +55,7 @@ function Certificate() {
                     whileInView={{opacity: 1, x: 0}}
                     viewport={{once: false}}
                     transition={{duration: 0.8, ease: "easeInOut"}}
-                    className="w-full sm:w-full my-32 hover:scale-105 transition-all duration-300 ease-linear rounded-3xl shadow-2xl sm:m-5 m-2 bg-opacity-50 h-[700px] bg-yellow-600"
+                    className="w-full sm:w-full my-32 hover:scale-105 transition-all duration-300 ease-linear rounded-3xl shadow-2xl sm:m-5 m-2 bg-opacity-70 h-[700px] bg-yellow-600"
                 >
                     <div className="flex flex-row">
                         <div className="p-10 w-[400px] h-[600px]">
