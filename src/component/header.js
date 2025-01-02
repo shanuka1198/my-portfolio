@@ -31,7 +31,7 @@ function Header() {
                         className="relative w-full sm:w-full sm:h-[340px] h-[500px] sm:rounded-r-full shadow-2xl shadow-black bg-yellow-600 my-8 sm:my-48 order-2 sm:order-none"
                         initial={{ opacity: 0, y: 50 }}
                         whileInView={{ opacity: 1, y: 0 }}
-                        viewport={{ once: false, amount: 0.2 }} // Adjust for partial visibility
+                        viewport={{ once: false, amount: 0.2 }}
                         transition={{ duration: 1, ease: "easeInOut" }}
                     >
                         <div className="absolute w-full">
@@ -72,7 +72,9 @@ function Header() {
                                 whileInView={{ opacity: 1, y: 0 }}
                                 transition={{ duration: 1, ease: "easeInOut" }}
                             >
-                                <button className="text-xs bg-white p-2 text-amber-700 hover:scale-105 transition-all ease-linear rounded-2xl">Discover My Work</button>
+                                <button onClick={()=>{
+                                    window.scrollTo({ top: 1780, behavior: "smooth" })
+                                }}  className="text-xs bg-white p-2 text-amber-700 hover:scale-105 transition-all ease-linear rounded-2xl">Discover My Work</button>
                             </motion.div>
                         </div>
                     </motion.div>

@@ -8,7 +8,7 @@ function Contact(){
                 <motion.p
                     initial={{opacity: 0, y: 50}}
                     whileInView={{opacity: 1, y: 0}}
-                    viewport={{once: false, amount: 0.2}} 
+                    viewport={{once: false, amount: 0.2}}
                     transition={{duration: 1, ease: "easeInOut"}}
                     className="sm:text-6xl sm:my-60 mx-24 my-12 text-center text-3xl font-bold text-yellow-600"
                 >

@@ -5,7 +5,7 @@ function About(){
     return(
         <>
             <div className="flex flex-col">
-                {/* Main Animated Div */}
+
                 <motion.div
                     className="relative sm:top-[20px] top-[600px] rounded-2xl shadow-black w-full sm:shadow-2xl sm:shadow-black sm:h-[150px] h-[100px] bg-yellow-600"
                     initial={{opacity: 0, y: 50}}
@@ -25,7 +25,7 @@ function About(){
                     </div>
                 </motion.div>
 
-                {/* Text Section with Animation */}
+
                 <motion.div
                     className="flex justify-center sm:mt-7 mt-[550px]"
                     initial={{opacity: 0, scale: 0.8}}
