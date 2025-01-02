@@ -1,6 +1,7 @@
 import {motion} from "framer-motion";
 
 function Project(){
+
     return(
         <>
             <div
@@ -33,10 +34,12 @@ function Project(){
                             This portfolio website was created by me to showcase professional skills, projects, and achievements. It
                             reflects creativity, technical expertise, and attention to detail.
                         </p>
-                        <button
-                            className="w-full mt-4 bg-yellow-600 text-white font-semibold py-2 rounded-lg shadow-md hover:bg-yellow-700 transition-all duration-300 ease-linear">
-                            Learn More
-                        </button>
+                        <a href="https://github.com/shanuka1198/my-portfolio">
+                            <button
+                                className="w-full mt-4 bg-yellow-600 text-white font-semibold py-2 rounded-lg shadow-md hover:bg-yellow-700 transition-all duration-300 ease-linear">
+                                Learn More
+                            </button>
+                        </a>
                     </div>
                 </motion.div>
 
@@ -57,12 +60,12 @@ function Project(){
                             Anantra Resort Hotel and Spa booking project, developed by me, features a seamless reservation system and
                             user-friendly interfaces.
                         </p>
-                        <button
-                            className="w-full mt-4 bg-yellow-600 text-white font-semibold py-2 rounded-lg shadow-md hover:bg-yellow-700 transition-all duration-300 ease-linear">
-                            Learn More
-
-
-                        </button>
+                        <a href="https://github.com/shanuka1198/hotel-booking-frunt-end">
+                            <button
+                                className="w-full mt-4 bg-yellow-600 text-white font-semibold py-2 rounded-lg shadow-md hover:bg-yellow-700 transition-all duration-300 ease-linear">
+                                Learn More
+                            </button>
+                        </a>
                     </div>
                 </motion.div>
             </div>
