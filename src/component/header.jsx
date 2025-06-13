@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
-import Menu from "../component/menu";
-import SocialMedia from "../component/social-media";
+import Menu from "./menu";
+import SocialMedia from "./social-media";
 
 function Header() {
     return (

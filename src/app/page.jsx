@@ -1,11 +1,11 @@
 "use client";
-import Header from "@/component/header";
-import About from "@/app/about/page";
-import Certificate from "@/app/certificate/page";
-import Contact from "@/app/contact/page";
-import Skills from "@/app/skills/page";
-import Project from "@/app/project/page";
-import Footer from "@/component/footer";
+import Header from "../component/header";
+import About from "../app/about/page";
+import Certificate from "../app/certificate/page";
+import Contact from "../app/contact/page";
+import Skills from "../app/skills/page";
+import Project from "../app/project/page";
+import Footer from "../component/footer";
 
 
 
